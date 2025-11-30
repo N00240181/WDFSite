@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+@theme {
+    --font-sans: Dongle, "sans-serif";
+
+    --color-topaz: #FFC177;
+    --color-topaz-light: #FFDAAD;
+
+    --color-lavander: #8B41FF;
+    --color-lavander-light: #B98DFF;
+
+    --color-salmon: #FF999D;
+    --color-salmon-light: #FFC2C4;
+
+    --color-grey: #CCCCCC;
+    --color-grey-dark: #404242;
+}
+
+@layer components {
+.card {
+    @apply flex flex-col items-center gap-4 p-4 bg-white rounded-xl shadow-md border-2 border-gray-200 mx-4 my-8 md:flex-row md:mx-32 md:my-32 hover:border-2 hover:border-solid hover:border-lavander duration-300;
+}
+
+.card-img {
+    @apply w-full md:w-64 lg:w-96 h-64 object-cover rounded-lg hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300 cursor-pointer;
+}
+
+.card-body {
+    @apply flex flex-col flex-1;
+}
+    
+.qacard {
+    @apply bg-white shadow-md rounded-lg p-6 border-2 border-gray-200 hover:border-2 hover:border-solid hover:border-salmon duration-300;
+}
+
+.qacard-title {
+    @apply text-2xl font-bold mb-2;
+}
+
+.qacard-description {
+    @apply text-gray-600;
+}
+}
