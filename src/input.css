@@ -15,15 +15,18 @@
 
     --color-grey: #CCCCCC;
     --color-grey-dark: #404242;
+
+    --color-indigos: #B956FF;
+    --color-indigos-light: #D59AFF;
 }
 
 @layer components {
 .card {
-    @apply flex flex-col-reverse items-center gap-4 p-8 md:p-4 bg-white rounded-xl shadow-md border-2 border-gray-200 my-8 md:flex-row md:m-32 hover:border-2 hover:border-solid hover:border-lavander duration-300;
+    @apply flex flex-col-reverse items-center gap-4 p-8 md:p-4 bg-white rounded-xl shadow-md border-2 border-gray-200 my-8 md:flex-row md:m-32 hover:border-2 hover:border-solid hover:border-lavander duration-300 hover:scale-105;
 }
 
 .cardrv {
-    @apply flex flex-col-reverse items-center gap-4 p-8 md:p-4 bg-white rounded-xl shadow-md border-2 border-gray-200 my-8 md:flex-row-reverse md:m-32 hover:border-2 hover:border-solid hover:border-lavander duration-300;
+    @apply flex flex-col-reverse items-center gap-4 p-8 md:p-4 bg-white rounded-xl shadow-md border-2 border-gray-200 my-8 md:flex-row-reverse md:m-32 hover:border-2 hover:border-solid hover:border-lavander duration-300 hover:scale-105;
 }
 
 .card-img {
@@ -32,6 +35,10 @@
 
 .card-body {
     @apply flex flex-col flex-1;
+}
+
+.goal {
+    @apply bg-white shadow-md rounded-lg p-12 border-2 border-gray-200 hover:border-2 hover:border-solid hover:border-indigos-light duration-300 text-center hover:scale-110;
 }
     
 .qacard {
@@ -45,4 +52,4 @@
 .qacard-description {
     @apply text-gray-600;
 }
-}
+}   

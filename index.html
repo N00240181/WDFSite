@@ -11,17 +11,17 @@
 </head>
 <body>
     <header>
-    <div class="bg-topaz flex justify-between px-5 md:px-20 text-center items-center py-0.25 md:py-3 fixed w-full z-10 border-b-2 border-topaz-light">
-    <a href="#"><img src="images/logo.png" class="max-h-16 max-w-16"></a>
-    <a href="#about"><h1 class="text-2xl md:text-4xl font-bold">About</h1></a>
+    <div class="bg-topaz flex justify-between px-5 md:px-20 text-center items-center py-0.25 md:py-1 fixed w-full z-10 border-b-2 border-topaz-light">
+    <a href="#header"><img src="images/logo.png" class="max-h-16 max-w-16"></a>
     <a href="#features"><h1 class="text-2xl md:text-4xl font-bold">Features</h1></a>
     <a href="#download"><h1 class="text-2xl md:text-4xl font-bold">Download</h1></a>
     <a href="#faq"><h1 class="text-2xl md:text-4xl font-bold">FAQ</h1></a>
+    <a href="#about"><h1 class="text-2xl md:text-4xl font-bold">About</h1></a>
     </div>
     </header>
 
     <section>
-        <div class="pb-8 pt-16 md:py-0 bg-black relative" id="about">
+        <div class="pb-8 pt-16 md:py-0 bg-black relative" id="header">
             <img src="images/header.jpg" class="h-full md:max-h-164 opacity-30 md:opacity-20 w-full" style="max-height: 656px;">
             <h1 class="text-white absolute top-3/5 left-1/2 -translate-x-1/2 -translate-y-3/5 md:top-1/2 md:-translate-y-1/2 text-center text-2xl sm:text-6xl ">EventUs is the quintessential app
             for those looking to get more in touch
@@ -64,13 +64,28 @@
         </div>
     </section>
 
+    <section class="px-4 md:p-20 bg-indigos border-y-2 border-indigos-light">
+        <h1 class="text-center text-8xl">Goals:</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <div class="goal">
+                <h1 class="text-4xl">Find Connections</h1>
+            </div>
+            <div class="goal">
+                <h1 class="text-4xl">Attend Events</h1>
+            </div>
+            <div class="goal">
+                <h1 class="text-4xl">Make Memories</h1>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div class="px-4 md:p-20 bg-topaz-light flex justify-between items-center border-y-2 border-topaz">
             <div class="md:mx-20 py-8" id="download">
             <h1 class="text-7xl md:text-6xl my-4">Find your people</h1>
             <h2 class="text-5xl md:text-4xl font-light my-8">Download now!</h2>
-            <img src="images/AppStore.png" class="mb-1 w-1/2 md:w-full md:h-full cursor-pointer">
-            <img src="images/GooglePlay.png" class="cursor-pointer mb-1 w-1/2 md:w-full md:h-full">
+            <img src="images/AppStore.png" class="hover:scale-105 duration-300 mb-1 w-1/2 md:w-full md:h-full cursor-pointer">
+            <img src="images/GooglePlay.png" class="hover:scale-105 duration-300 cursor-pointer mb-1 w-1/2 md:w-full md:h-full">
             </div>
 
             <div class="mx-4 md:mx-20 py-20">
@@ -112,7 +127,7 @@
     </section>
 
     <section>
-        <div class="p-4 md:px-20 md:py-10 bg-grey border-y-2 border-grey-dark">
+        <div class="p-4 md:px-20 md:py-10 bg-grey border-y-2 border-grey-dark" id="about">
             <h3 class="text-3xl font-light mx-4 mt-8 md:mx-16 ,md:mt-16 mb-8">Created by the Nielson Group</h3>
             <div class="flex justify-between items-center">
             <h3 class="text-3xl font-light mx-4 md:mx-16">Site by Kai</h3>
